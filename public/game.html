@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070512" />
+    <title>Catch My Heart — Happy Birthday, Modak</title>
+    <meta
+      name="description"
+      content="A little mini-game: catch fifteen hearts to unlock the next birthday surprise."
+    />
+    <link rel="canonical" href="./game.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Catch My Heart — For Modak" />
+    <meta property="og:description" content="Catch 15 hearts to unlock the next surprise." />
+    <meta property="og:image" content="images/niya-1.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header></header>
+
+    <main class="page-main page-fade" id="main">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow reveal">Mini game</p>
+          <h1 class="reveal">Catch My Heart <span aria-hidden="true">❤️</span></h1>
+          <p class="lede reveal">Catch 15 hearts to unlock the next surprise.</p>
+        </div>
+
+        <section class="game card reveal" aria-label="Catch My Heart game">
+          <div class="game__hud">
+            <p style="margin: 0">
+              Score: <span data-score aria-live="polite">0</span>/15
+            </p>
+            <div class="game__meter" role="presentation"><span data-meter></span></div>
+            <button class="btn btn--ghost" type="button" data-game-restart>Restart</button>
+          </div>
+          <div class="game__zone" data-game-zone></div>
+          <p class="game__message" data-game-message aria-live="polite">
+            Tap the hearts as they drift by.
+          </p>
+        </section>
+
+        <nav class="chapter-nav" data-chapter-nav aria-label="Chapter"></nav>
+      </div>
+    </main>
+
+    <footer class="site-footer" data-footer></footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

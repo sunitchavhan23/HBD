@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070512" />
+    <title>Memory Gallery — Happy Birthday, Modak</title>
+    <meta
+      name="description"
+      content="An interactive gallery of photos and a video from the little moments that matter."
+    />
+    <link rel="canonical" href="./gallery.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Memory Gallery — For Modak" />
+    <meta property="og:description" content="A little collection of beautiful moments." />
+    <meta property="og:image" content="images/niya-1.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header></header>
+
+    <main class="page-main page-fade" id="main">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow reveal">Interactive memory gallery</p>
+          <h1 class="reveal">A little collection of beautiful moments</h1>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter memories">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">
+            All
+          </button>
+          <button class="filter-btn" type="button" data-filter="photo" aria-pressed="false">
+            Photos
+          </button>
+          <button class="filter-btn" type="button" data-filter="video" aria-pressed="false">
+            Videos
+          </button>
+        </div>
+
+        <div class="gallery" data-gallery>
+          <article class="gallery__item card reveal" data-type="photo">
+            <button
+              class="gallery__media"
+              type="button"
+              style="border: 0; padding: 0; cursor: zoom-in"
+              data-zoom="images/niya-1.jpeg"
+              data-zoom-alt="Golden dusk — a favourite photo of Modak"
+            >
+              <img
+                src="images/niya-1.jpeg"
+                alt="Golden dusk — a favourite photo of Modak"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="900"
+              />
+            </button>
+            <div class="gallery__caption">
+              <h2>Golden dusk</h2>
+              <p>Sabki Apni Apni Aankhein</p>
+              <p>Sabka Apna Apna Chaand</p>
+            </div>
+          </article>
+
+          <article class="gallery__item card reveal" data-type="video">
+            <div class="gallery__media">
+              <video controls playsinline preload="metadata" poster="images/niya-1.jpeg">
+                <source src="images/memory-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="gallery__caption">
+              <h2>Shared laugh</h2>
+              <p>A little memory captured in motion.</p>
+            </div>
+          </article>
+
+          <article class="gallery__item card reveal" data-type="photo">
+            <button
+              class="gallery__media"
+              type="button"
+              style="border: 0; padding: 0; cursor: zoom-in"
+              data-zoom="images/memory-evening.jpeg"
+              data-zoom-alt="A soft evening glow"
+            >
+              <img
+                src="images/memory-evening.jpeg"
+                alt="A soft evening glow"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="900"
+              />
+            </button>
+            <div class="gallery__caption">
+              <h2>Soft evening glow</h2>
+              <p>One of the countless little moments that matter.</p>
+            </div>
+          </article>
+
+          <article class="gallery__item card reveal" data-type="photo">
+            <button
+              class="gallery__media"
+              type="button"
+              style="border: 0; padding: 0; cursor: zoom-in"
+              data-zoom="images/niya-3.jpeg"
+              data-zoom-alt="Our favourite kind of magic"
+            >
+              <img
+                src="images/niya-3.jpeg"
+                alt="Our favourite kind of magic"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="900"
+              />
+            </button>
+            <div class="gallery__caption">
+              <h2>Our favourite kind of magic</h2>
+              <p>Beautiful, intimate, and entirely ours.</p>
+            </div>
+          </article>
+
+          <article class="gallery__item card reveal" data-type="photo">
+            <button
+              class="gallery__media"
+              type="button"
+              style="border: 0; padding: 0; cursor: zoom-in"
+              data-zoom="images/niya-2.jpeg"
+              data-zoom-alt="A quiet, happy in-between moment"
+            >
+              <img
+                src="images/niya-4.jpeg"
+                alt="A quiet, happy in-between moment"
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="900"
+              />
+            </button>
+            <div class="gallery__caption">
+              <h2>In-between moments</h2>
+              <p>The ordinary days that turned out to be the best ones.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Native <dialog> lightbox: zero dependencies, focus-trapped by the browser -->
+        <dialog class="lightbox" data-lightbox aria-label="Enlarged memory">
+          <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close">
+            ✕
+          </button>
+          <img src="" alt="" />
+        </dialog>
+
+        <nav class="chapter-nav" data-chapter-nav aria-label="Chapter"></nav>
+      </div>
+    </main>
+
+    <footer class="site-footer" data-footer></footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

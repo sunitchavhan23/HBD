@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070512" />
+    <title>Happy Birthday, Modak — A Story Written in Memories</title>
+    <meta
+      name="description"
+      content="A cinematic birthday journey for Modak: our story, a memory gallery, a letter, a heart game, a gift, a celebration and ten little doors."
+    />
+    <link rel="canonical" href="./index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Happy Birthday, Modak" />
+    <meta
+      property="og:description"
+      content="A cinematic birthday journey made with love, nostalgia, and all my heart."
+    />
+    <meta property="og:image" content="images/niya-1.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Loading screen: only on the landing page, so the rest of the
+         journey never pays the animation cost twice. -->
+    <div class="loader" data-loader>
+      <div class="loader__card">
+        <div class="loader__heart" aria-hidden="true"></div>
+        <p class="loader__title">Preparing a beautiful birthday journey…</p>
+        <div class="loader__bar"><span></span></div>
+      </div>
+    </div>
+
+    <header class="site-header" data-header></header>
+
+    <main class="page-main page-fade" id="main">
+      <div class="shell">
+        <section class="hero">
+          <div>
+            <p class="eyebrow reveal">A special story written in memories</p>
+            <h1 class="hero__title reveal" style="--reveal-delay: 80ms">
+              Happy Birthday,
+              <span class="hero__name">Modak <span class="text-rose" aria-hidden="true">❤</span></span>
+            </h1>
+            <p class="lede reveal" style="--reveal-delay: 160ms">
+              From fifth standard to the present, every chapter feels softer
+              because you are in it. This is a birthday gift made with love,
+              nostalgia, and all my heart for my Modak.
+            </p>
+            <div class="btn-row reveal" style="--reveal-delay: 240ms">
+              <a class="btn btn--primary" href="story.html">Begin our story</a>
+              <a class="btn btn--ghost" href="finale.html">Open the finale</a>
+            </div>
+
+            <dl class="hero__stats reveal" style="--reveal-delay: 320ms">
+              <div class="hero__stat"><dt>We met in</dt><dd>5th standard</dd></div>
+              <div class="hero__stat"><dt>Truly special for</dt><dd>5 years</dd></div>
+              <div class="hero__stat"><dt>Chapters ahead</dt><dd>Nine</dd></div>
+            </dl>
+          </div>
+
+          <aside class="card card--warm hero__note reveal" style="--reveal-delay: 200ms">
+            <div class="ornaments" aria-hidden="true">
+              <span>♡</span><span>✦</span><span>❥</span><span>✿</span>
+            </div>
+            <p class="eyebrow">A little note</p>
+            <h2>We met in 5th standard.</h2>
+            <p class="muted">
+              Our bond became truly special 5 years ago, and every year since
+              has felt like a beautiful chapter being written just for us.
+            </p>
+          </aside>
+        </section>
+
+        <section aria-labelledby="chapters-title">
+          <div class="section-head" style="margin-top: var(--space-xl)">
+            <p class="eyebrow reveal">The journey</p>
+            <h2 id="chapters-title" class="reveal">Nine chapters, one birthday</h2>
+            <p class="muted reveal">
+              Take them in order, or wander wherever your heart goes first.
+            </p>
+          </div>
+          <!-- Rendered from the CHAPTERS list in main.js so the journey
+               order lives in exactly one place. -->
+          <ul class="chapters" data-chapter-list></ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" data-footer></footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
